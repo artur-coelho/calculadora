@@ -55,7 +55,6 @@ function outraOperacao() {
     case "1":
       interface();
     case "2":
-      console.log("Calculadora encerrada");
       return false;
     default:
       console.log("Digite uma entrada válida");
