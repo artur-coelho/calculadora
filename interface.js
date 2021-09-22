@@ -23,19 +23,19 @@ function interface() {
     case "0":
       return;
     case "1":
-      const resposta = soma(valor1, valor2);
-      console.log(valor1 + " + " + valor2 + " = " + resposta + "\n");
+      const respostaSoma = soma(valor1, valor2);
+      console.log(valor1 + " + " + valor2 + " = " + respostaSoma + "\n");
       return outraOperacao();
     case "2":
-      const resposta = subtracao(valor1, valor2);
-      console.log(valor1 + " - " + valor2 + " = " + resposta + "\n");
+      const respostaSub = subtracao(valor1, valor2);
+      console.log(valor1 + " - " + valor2 + " = " + respostaSub + "\n");
       return outraOperacao();
     case "3":
-      const resposta = multiplcacao(valor1, valor2);
-      console.log(valor1 + " x " + valor2 + " = " + resposta + "\n");
+      const respostaMult = multiplcacao(valor1, valor2);
+      console.log(valor1 + " x " + valor2 + " = " + respostaMult + "\n");
       return outraOperacao();
     default:
-      console.log("Digite uma operação válida!");
+      console.log("Informe uma operação válida! \n");
       return interface();
   }
 }
@@ -47,10 +47,10 @@ function outraOperacao() {
     case "1":
       interface();
     case "2":
+      console.log("Calculadora encerrada");
       return;
     default:
       console.log("Digite uma entrada válida");
-      "";
   }
 }
 
