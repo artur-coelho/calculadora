@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const potencia = require("./potencia");
 
 test("Espera certo resultado da potenciação", () => {

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const divisao = require("./divisao");
 
 test("Espera certo resultado da da divisão", () => {

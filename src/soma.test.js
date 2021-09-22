@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const soma = require("./soma");
 
 test("Esepera que a soma de dois número seja igual a certo resultado", () => {

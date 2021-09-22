@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const subtracao = require("./subtracao");
 
 test("Espera certo resultado após a subtração de dois números", () => {

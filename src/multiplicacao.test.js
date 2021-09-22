@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const multiplicacao = require("./multiplicacao");
 
 test("Espera certo resultado da da multiplicação", () => {
