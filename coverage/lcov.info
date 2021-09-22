@@ -1,5 +1,18 @@
 TN:
-SF:multiplicacao.js
+SF:src\divisao.js
+FN:1,divisao
+FNF:1
+FNH:1
+FNDA:1,divisao
+DA:2,1
+DA:5,1
+LF:2
+LH:2
+BRF:0
+BRH:0
+end_of_record
+TN:
+SF:src\multiplicacao.js
 FN:1,multiplicacao
 FNF:1
 FNH:1
@@ -12,7 +25,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:soma.js
+SF:src\soma.js
 FN:1,soma
 FNF:1
 FNH:1
@@ -25,7 +38,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:subtracao.js
+SF:src\subtracao.js
 FN:1,subtracao
 FNF:1
 FNH:1
