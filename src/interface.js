@@ -39,8 +39,12 @@ function interface() {
       console.log(valor1 + " x " + valor2 + " = " + respostaMult + "\n");
       return outraOperacao();
     case "4":
-      const respostaDiv = divisao(valor1, valor2);
-      console.log(valor1 + " / " + valor2 + " = " + respostaDiv + "\n");
+      if (valor2 == 0) {
+        console.log("Impossível dividir por 0!");
+      } else {
+        const respostaDiv = divisao(valor1, valor2);
+        console.log(valor1 + " / " + valor2 + " = " + respostaDiv + "\n");
+      }
       return outraOperacao();
     default:
       console.log("Informe uma operação válida! \n");
