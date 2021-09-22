@@ -5,6 +5,9 @@ let multiplcacao = require("./multiplicacao");
 let divisao = require("./divisao");
 
 function interface() {
+  console.log("-------------------------");
+  console.log("CALCULADORA REPOSIÇÃO GCM");
+  console.log("-------------------------");
   console.log(
     "Digite o número correspondente a operação que seja realizar \n" +
       "1. Soma \n" +
