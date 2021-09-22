@@ -28,19 +28,19 @@ function interface() {
     case "1":
       valor1 = parseFloat(prompt("Digite o primeiro valor: "));
       valor2 = parseFloat(prompt("Digite o segundo valor: "));
-      const respostaSoma = soma(valor1, valor2);
+      var respostaSoma = soma(valor1, valor2);
       console.log(valor1 + " + " + valor2 + " = " + respostaSoma + "\n");
       return outraOperacao();
     case "2":
       valor1 = parseFloat(prompt("Digite o primeiro valor: "));
       valor2 = parseFloat(prompt("Digite o segundo valor: "));
-      const respostaSub = subtracao(valor1, valor2);
+      var respostaSub = subtracao(valor1, valor2);
       console.log(valor1 + " - " + valor2 + " = " + respostaSub + "\n");
       return outraOperacao();
     case "3":
       valor1 = parseFloat(prompt("Digite o primeiro valor: "));
       valor2 = parseFloat(prompt("Digite o segundo valor: "));
-      const respostaMult = multiplcacao(valor1, valor2);
+      var respostaMult = multiplcacao(valor1, valor2);
       console.log(valor1 + " x " + valor2 + " = " + respostaMult + "\n");
       return outraOperacao();
     case "4":
@@ -57,7 +57,7 @@ function interface() {
       valor1 = parseFloat(
         prompt("Digite o número que deseja elevar ao quadrado: ")
       );
-      const respostaPotencia = potencia(valor1);
+      var respostaPotencia = potencia(valor1);
       console.log(valor1 + " ^ 2 " + " = " + respostaPotencia + "\n");
       return outraOperacao();
     default:
@@ -71,11 +71,12 @@ function outraOperacao() {
   const resposta = prompt();
   switch (resposta) {
     case "1":
-      interface();
+      return interface();
     case "2":
       return false;
     default:
       console.log("Digite uma entrada válida");
+      return interface();
   }
 }
 
