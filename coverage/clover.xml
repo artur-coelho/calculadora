@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632275899952" clover="3.2.0">
+  <project timestamp="1632275899953" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="3" classes="3"/>
+    <file name="multiplicacao.js" path="C:\Users\Pichau\Documents\T I\2021.1\Gerência de configuração e mudanças\Projeto_Reposição\Calculadora\multiplicacao.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
+    <file name="soma.js" path="C:\Users\Pichau\Documents\T I\2021.1\Gerência de configuração e mudanças\Projeto_Reposição\Calculadora\soma.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
+    <file name="subtracao.js" path="C:\Users\Pichau\Documents\T I\2021.1\Gerência de configuração e mudanças\Projeto_Reposição\Calculadora\subtracao.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
