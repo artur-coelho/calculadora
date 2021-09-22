@@ -1,5 +1,7 @@
 let prompt = require("prompt-sync")();
 let soma = require("./soma");
+let subtracao = require("./subtracao");
+let multiplcacao = require("./multiplicacao");
 
 function interface() {
   console.log(
@@ -18,14 +20,22 @@ function interface() {
   const valor2 = parseFloat(prompt("Digite o segundo valor: "));
 
   switch (operacao) {
+    case "0":
+      return;
     case "1":
       const resposta = soma(valor1, valor2);
       console.log(valor1 + " + " + valor2 + " = " + resposta + "\n");
       return outraOperacao();
-    case "0":
-      return;
+    case "2":
+      const resposta = subtracao(valor1, valor2);
+      console.log(valor1 + " - " + valor2 + " = " + resposta + "\n");
+      return outraOperacao();
+    case "3":
+      const resposta = multiplcacao(valor1, valor2);
+      console.log(valor1 + " x " + valor2 + " = " + resposta + "\n");
+      return outraOperacao();
     default:
-      console.log("Digite uma operação válida");
+      console.log("Digite uma operação válida!");
       return interface();
   }
 }
