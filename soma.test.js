@@ -1,5 +1,5 @@
 const soma = require("./soma");
 
-test("adds 1 + 2 to equal 3", () => {
-  expect(soma(1, 2)).toBe(3);
+test("Esepera que a soma de dois número seja igual a certo resultado", () => {
+  expect(soma(123456789, 987654321)).toBe(1111111110);
 });
