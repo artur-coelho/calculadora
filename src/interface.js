@@ -19,29 +19,33 @@ function interface() {
       "0. SAIR"
   );
   const operacao = prompt();
-  if (operacao == "0") {
-    return false;
-  }
-
-  const valor1 = parseFloat(prompt("Digite o primeiro valor: "));
-  const valor2 = parseFloat(prompt("Digite o segundo valor: "));
+  let valor1 = 0;
+  let valor2 = 0;
 
   switch (operacao) {
     case "0":
       return false;
     case "1":
+      valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+      valor2 = parseFloat(prompt("Digite o segundo valor: "));
       const respostaSoma = soma(valor1, valor2);
       console.log(valor1 + " + " + valor2 + " = " + respostaSoma + "\n");
       return outraOperacao();
     case "2":
+      valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+      valor2 = parseFloat(prompt("Digite o segundo valor: "));
       const respostaSub = subtracao(valor1, valor2);
       console.log(valor1 + " - " + valor2 + " = " + respostaSub + "\n");
       return outraOperacao();
     case "3":
+      valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+      valor2 = parseFloat(prompt("Digite o segundo valor: "));
       const respostaMult = multiplcacao(valor1, valor2);
       console.log(valor1 + " x " + valor2 + " = " + respostaMult + "\n");
       return outraOperacao();
     case "4":
+      valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+      valor2 = parseFloat(prompt("Digite o segundo valor: "));
       if (valor2 == 0) {
         console.log("Impossível dividir por 0!");
       } else {
@@ -50,6 +54,9 @@ function interface() {
       }
       return outraOperacao();
     case "5":
+      valor1 = parseFloat(
+        prompt("Digite o número que deseja elevar ao quadrado: ")
+      );
       const respostaPotencia = potencia(valor1);
       console.log(valor1 + " ^ 2 " + " = " + respostaPotencia + "\n");
       return outraOperacao();
