@@ -3,6 +3,7 @@ let soma = require("./soma");
 let subtracao = require("./subtracao");
 let multiplcacao = require("./multiplicacao");
 let divisao = require("./divisao");
+let potencia = require("./potencia");
 
 function interface() {
   console.log("-------------------------");
@@ -14,12 +15,14 @@ function interface() {
       "2. Subtração \n" +
       "3. Multiplicação \n" +
       "4. Divisão \n" +
+      "5. Potenciação ao quadrado \n" +
       "0. SAIR"
   );
   const operacao = prompt();
   if (operacao == "0") {
     return false;
   }
+
   const valor1 = parseFloat(prompt("Digite o primeiro valor: "));
   const valor2 = parseFloat(prompt("Digite o segundo valor: "));
 
@@ -41,6 +44,10 @@ function interface() {
     case "4":
       const respostaDiv = divisao(valor1, valor2);
       console.log(valor1 + " / " + valor2 + " = " + respostaDiv + "\n");
+      return outraOperacao();
+    case "5":
+      const respostaPotencia = potencia(valor1);
+      console.log(valor1 + " ^ 2 " + " = " + respostaPotencia + "\n");
       return outraOperacao();
     default:
       console.log("Informe uma operação válida! \n");
